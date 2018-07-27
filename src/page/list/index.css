@@ -1,0 +1,119 @@
+/*
+* @Author: mmall
+* @Date:   2017-05-27 18:04:22
+* @Last Modified by:   King
+* @Last Modified time: 2018-07-23 15:24:30
+*/
+/* 排序按钮 */
+.sort-con{
+    overflow: auto;
+}
+.sort-con .sort-item{
+    float: left;
+    display: inline-block;
+    position: relative;
+    padding: 0 0.4rem;
+    height: 1.2rem;
+    line-height: 1.2rem;
+    border: 1px solid #ccc;
+    margin-right: -1px;
+    background: #fff;
+    color: #333;
+    cursor: pointer;
+}
+.sort-con .sort-item.active{
+    background: #c60023;
+    border: 1px solid #c60023;
+    color: #fff;
+}
+.sort-con .sort-item .fa-sort-desc{
+    position: absolute;
+    top: 0.4rem;
+    right: 0.4rem;
+}
+.sort-con .sort-item.asc .fa-sort-desc{
+    opacity: .6;
+}
+.sort-con .sort-item.desc .fa-sort-asc{
+    opacity: .6;
+}
+
+/* 列表 */
+.p-list-con{
+    margin-top: 0.75rem;
+    margin-right: -1rem;
+    overflow: hidden;
+}
+.p-list-con .p-item{
+    position: relative;
+    width: 16%;
+    float: left;
+    padding: 0.5rem;
+    margin: 0 1rem 1rem 0;
+    background: #fff;
+}
+.p-list-con .p-item .p-img-con{
+    width: 100%;
+    height: 200px;
+}
+.p-list-con .p-item .p-img-con .p-img{
+    width: 100%;
+    height: 100%;
+}
+.p-list-con .p-item .p-price-con{
+    height: 1.5rem;
+    line-height: 1rem;
+}
+.p-list-con .p-item .p-price-con .p-price{
+    font-size: 0.8rem;
+    color: #e7380d;
+}
+.p-list-con .p-item .p-name-con{
+    height: 2rem;
+    overflow: hidden;
+}
+.p-list-con .p-item .p-name-con .p-name{
+    line-height: 1rem;
+    margin-bottom: 0.5rem;
+    color: #666;
+    text-decoration: none;
+}
+/* 错误信息 */
+.err-tip{
+    height: 3rem;
+    line-height: 3rem;
+    color: #f60;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-align: center;
+    background: #eee;
+}
+@media only screen and (max-width: 50em) {
+    .sort-con{
+        margin-bottom: 0.25rem;
+    }
+    .sort-con .sort-item{
+        height: 1rem;
+        line-height: 1rem;    
+    }
+    .p-list-con{
+        width: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .p-list-con .p-item{
+        position: relative;
+        width: 42.96%;
+        padding: 0.5rem;
+        margin: 0 0 0.5rem 0;
+    }
+    .p-list-con .p-item:nth-child(odd){
+        margin: 0 0 0.5rem 0;
+    }
+    .p-list-con .p-item .p-img-con{
+        height: 8rem;
+    }
+}

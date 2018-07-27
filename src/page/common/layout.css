@@ -1,0 +1,133 @@
+/*
+* @Author: King
+* @Date:   2017-05-16 18:03:01
+* @Last Modified by:   King
+* @Last Modified time: 2018-07-22 12:13:06
+*/
+/* css reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 125%;
+}
+body{
+    background: #f6f6f6;
+    font: 0.6rem/1.5 tahoma, arial, Microsoft YaHei, sans-serif;
+}
+li{
+    list-style: none;
+}
+img{
+    display: block;
+    border: none;
+}
+label{
+    cursor: pointer;
+}
+input[type='checkbox']{
+    cursor: pointer;
+}
+
+/* 定宽布局 */
+.w{
+    width: 80.06%;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+/* panel */
+.panel{
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    background: #fff;
+}
+.panel .panel-title{
+    padding: 0.5rem;
+    font-size: 0.7rem;
+    color: #666;
+    font-weight: bold;
+    border-bottom: 0.0.5rem solid #eee;
+}
+.panel .panel-body{
+    padding: 0.5rem;
+    overflow: hidden;
+}
+
+/* 全局通用样式 */
+/* 隐藏类 */
+.hide{
+    display: none;
+}
+/* 超链样式 */
+.link{
+    color: #999;
+    cursor: pointer;
+    text-decoration: none;
+}
+.link:hover{
+    color: #e80012;
+}
+.link-text{
+    color: #999;
+    text-decoration: none;
+}
+/* btn */
+.btn{
+    display: inline-block;
+    padding: 0 1rem;
+    height: 2rem;
+    line-height: 2rem;
+    vertical-align: middle;
+    border: none;
+    background: #c60023;
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+.btn-mini{
+    height: 1.25rem;
+    line-height: 1.25rem;
+    font-size: 0.6rem;
+    padding: 0 0.5rem;
+}
+/* loading */
+.loading{
+    margin: 0.5rem auto;
+    display: block;
+    width: 3.25rem;
+    height: 3.25rem;
+    border: 0.05rem solid #ddd;
+    border-radius: 0.25rem;
+    background: url(../../image/icon/loading.gif) no-repeat;
+    opacity: .6;
+}
+@media only screen and (max-width: 50em) {
+    .w{
+        width: 100%;
+        padding: 0 0.5rem;
+        margin: 0 auto;
+        position: relative;
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+    .btn{
+        padding: 0 5px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 14px;
+    }
+    .panel{
+        padding: 5px;
+    }
+    .panel .panel-title{
+        padding: 5px;
+    }
+    .panel .panel-body{
+        padding: 5px;
+    }
+}

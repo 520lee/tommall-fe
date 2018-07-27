@@ -1,0 +1,44 @@
+/*
+* @Author: King
+* @Date:   2017-05-17 14:16:54
+* @Last Modified by:   King
+* @Last Modified time: 2018-07-22 15:54:46
+*/
+.nav{
+	height: 1.5rem;
+    line-height: 1.5rem;
+    background: #eee;
+}
+/* 用户部分 */
+.nav .user{
+    float: left;
+}
+.nav .user.login{
+    display: none;
+}
+.nav .user .link{
+    margin-right: 0.25rem;
+}
+/* 导航链接部分 */
+.nav .nav-list{
+    float: right;
+}
+.nav .nav-list .nav-item{
+    display: inline-block;
+    margin-left: 0.25rem;
+}
+@media only screen and (max-width: 50em) {
+	/* 用户部分 */
+	.nav-list {
+	    display: none;
+	}
+	.nav{
+	    background: #eee;
+	    height: 2rem;
+	    line-height: 2rem;   
+	}
+	.nav .user{
+	    float: right;
+	}
+
+}

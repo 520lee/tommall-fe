@@ -1,0 +1,233 @@
+/*
+* @Author: King
+* @Date:   2017-05-09 17:16:19
+* @Last Modified by:   King
+* @Last Modified time: 2018-07-23 08:42:50
+*/
+
+/* keywords-list */
+.keywords-list{
+    float: left;
+    width: 22.2%;
+    height: 17.5rem;
+    padding: 0.5rem 0;
+    margin-right: 0.95%;
+    background: #666;
+    color: #fff;
+}
+.keywords-list .keywords-item{
+    padding-left: 0.5rem;
+    height: 1.7rem;
+    line-height: 1.7rem;
+    font-size: 0.7rem;
+}
+.keywords-list .keywords-item:hover{
+    background: #999;
+}
+.keywords-list .keywords-item .link{
+    margin-right: 0.3rem;
+    color: #fff;
+}
+.keywords-list .keywords-item .link:hover{
+    color: #c60023;
+}
+@media only screen and (max-width: 50em) {
+    .keywords-list {
+        display: none;
+    }
+}
+/* banner-con */
+.banner-con{
+    width: 76.85%;
+    float: left;
+    height: 18.5rem;
+    background: #eee;
+}
+.banner-con .loading{
+    margin-top: 7.5rem;
+}
+.banner-con .banner-img{
+    width: 100%;
+    height: 18.5rem;
+}
+/* banner的前一张和后一张按钮 */
+.banner-con .banner-arrow{
+    position: absolute; 
+    top:8rem;
+    width: 1.5rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #fff;
+    background: #ccc;
+    background: rgba(0,0,0,.2);
+    cursor: pointer;
+}
+.banner-con .banner-arrow:hover{
+    background: #aaa;
+    background: rgba(0,0,0,.5);
+}
+.banner-con .banner-arrow.prev{
+    left: 0;
+}
+.banner-con .banner-arrow.next{
+    right: 0;
+}
+@media only screen and (max-width: 50em) {
+    .banner-con{
+        width: 100%;
+        float: left;
+        height: 200px;
+        background: #eee;
+    }
+    .banner-con .loading{
+        margin-top: 3.25rem;
+    }
+    .banner-con .banner-img{
+        width: 100%;
+        height: 200px;
+    }
+    /* banner的前一张和后一张按钮 */
+    .banner-con .banner-arrow{
+        position: absolute; 
+        top:4rem;
+        width: 1.25rem;
+        height: 2.25rem;
+        line-height: 2.25rem;
+        text-align: center;
+        font-size: 1.5rem;
+        color: #fff;
+        background: #ccc;
+        background: rgba(0,0,0,.2);
+        cursor: pointer;
+    }
+}
+/* floor */
+.floor-wrap .floor-title{
+    height: 2.5rem;
+    line-height: 2.5rem;
+    color: #d58717;
+    font-weight: normal;
+    font-size: 1rem;
+    border-bottom: 0.05rem solid #d58717;
+}
+/* 更改各楼层标题颜色 */
+.floor-wrap:nth-child(2) .floor-title{
+    color: #3b838c;
+    border-bottom: 0.05rem solid #3b838c;
+}
+.floor-wrap:nth-child(3) .floor-title{
+    color: #a93931;
+    border-bottom: 0.05rem solid #a93931;
+}
+.floor-wrap:nth-child(4) .floor-title{
+    color: #488bad;
+    border-bottom: 0.05rem solid #488bad;
+}
+.floor-wrap:nth-child(5) .floor-title{
+    color: #642663;
+    border-bottom: 0.05rem solid #642663;
+}
+.floor-wrap .floor-list{
+    margin-right: -1rem;
+    overflow: hidden;
+}
+.floor-wrap .floor-list .floor-item {
+    position: relative;
+    width: 18.18%;
+    height: 11rem;
+    margin: 0.75rem 1.8% 0.75rem 0;
+    float: left;
+    cursor: pointer;
+    background: #fff;
+}
+.floor-wrap .floor-list .floor-item:hover{
+    box-shadow: 1px 1px 7px #ddd;
+}
+.floor-wrap .floor-list .floor-item .floor-text{
+    position: absolute;
+    top: 0.6rem;
+    left: 10%;
+    font-size: 0.8rem;
+    color: #555;
+}
+.floor-wrap .floor-list .floor-item .floor-img{
+    position: absolute;
+    right: 7.5%;
+    bottom: 0.5rem;
+    width: 80%;
+    height: 75%;
+    border: none;
+}
+@media only screen and (max-width: 50em) {
+    .floor-wrap .floor-title{
+        height: 1.5rem;
+        line-height: 1.5rem;
+        color: #d58717;
+        font-weight: normal;
+        font-size: 0.8rem;
+        border-bottom: 1px solid #d58717;
+    }
+    /* 更改各楼层标题颜色 */
+    .floor-wrap:nth-child(2) .floor-title{
+        color: #3b838c;
+        border-bottom: 1px solid #3b838c;
+    }
+    .floor-wrap:nth-child(3) .floor-title{
+        color: #a93931;
+        border-bottom: 1px solid #a93931;
+    }
+    .floor-wrap:nth-child(4) .floor-title{
+        color: #488bad;
+        border-bottom: 1px solid #488bad;
+    }
+    .floor-wrap:nth-child(5) .floor-title{
+        color: #642663;
+        border-bottom: 1px solid #642663;
+    }
+    .floor-wrap .floor-list{
+        width: 100%;
+        margin-right: -1rem;
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .floor-wrap .floor-list .floor-item{
+        position: relative;
+        width: 42.96%;
+        height: 185px;
+        padding: 0.5rem;
+        margin: 0.5rem 0 0.5rem 0;
+        /*margin: 10px 0 5px 0;*/
+        float: left;
+        cursor: pointer;
+        background: #fff;
+    }
+    .floor-wrap .floor-list .floor-item:nth-child(even){
+        margin: 0.5rem 0 ;
+    }
+    /*.floor-wrap .floor-list .floor-item:nth-child(odd){
+        margin: 10px 10px 5px 0;
+    }*/
+    .floor-wrap .floor-list .floor-item:hover{
+        box-shadow: 1px 1px 7px #ddd;
+    }
+    .floor-wrap .floor-list .floor-item .floor-text{
+        position: absolute;
+        top: 12px;
+        left: 20px;
+        font-size: 16px;
+        color: #555;
+    }
+    .floor-wrap .floor-list .floor-item .floor-img{
+        position: absolute;
+        right: 15px;
+        bottom: 10px;
+        width: 80%;
+        height: 75%;
+        border: none;
+    }
+}

@@ -1,0 +1,29 @@
+/*
+* @Author: King
+* @Date:   2017-05-17 11:26:31
+* @Last Modified by:   King
+* @Last Modified time: 2018-07-22 13:20:47
+*/
+.nav-simple{
+    height: 3rem;
+    line-height: 3rem;
+    border-bottom: 0.05rem solid #ddd;
+    background: #fff;
+}
+.nav-simple .logo{
+    left: 10rem;
+    position: absolute;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #c60023;
+    text-decoration: none;
+}
+@media only screen and (max-width: 50em) {
+    .nav-simple .logo{
+        position: absolute;
+        left: 33%;
+        top: -2px;
+        display: block;
+        font-size: 1.4rem;
+    }
+}

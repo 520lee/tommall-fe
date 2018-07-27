@@ -1,0 +1,85 @@
+/*
+* @Author: King
+* @Date:   2017-05-18 19:30:20
+* @Last Modified by:   King
+* @Last Modified time: 2018-07-23 11:39:52
+*/
+/* 通用头部导航 */
+.header .logo{
+    position: absolute;
+    left: 12.5%;
+    top: 3.2rem;
+    z-index: 10;
+    display: block;
+    font-size: 1.8rem;
+    color: #c60023;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.header .search-con{
+    padding: 2rem 0 1.5rem 12.5rem;
+}
+.header .search-con .search-input{
+    width: 66.5%;
+    height: 2rem;
+    line-height: 2rem;
+    padding-left: 0.5rem;
+    font-size: 0.75rem;
+    border: 0.1rem solid #c60023;
+    outline: none;
+}
+.header .search-con .search-btn{
+    position: absolute;
+    height: 2.2rem;
+    width: 4rem;
+}
+
+/* 面包屑导航 */
+.crumb{
+    margin-bottom: 0.75rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    background: #eee;
+    color: #888;
+    font-size: 0.7rem;
+    border-top: 0.1rem solid #c60023;
+}
+
+@media only screen and (max-width: 30em) {
+
+}
+@media only screen and (max-width: 50em) {
+    .header .logo{
+        left: 33%;
+        top: -1px;
+        font-size: 1.3rem;
+    }
+
+    .header .search-con{
+        padding: 0.5rem 0 0.5rem 0;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+    .header .search-con .search-input{
+        width: 80.5%;
+        height: 1.3rem;
+        line-height: 1.3rem;
+        padding: 0 0.5rem;
+        font-size: 0.75rem;
+        border: 0.1rem solid #c60023;
+        outline: none;
+    }
+    .header .search-con .search-btn{
+        position: relative;
+        height: 1.5rem;
+        width: 15%;
+    }
+
+    /* 面包屑导航 */
+    .crumb{
+        display: none;
+    }
+}
